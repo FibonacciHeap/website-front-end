@@ -26,6 +26,8 @@
 	    			$("#arrow1").css("background-color", "#e7e7e2");
 	    			$("#arrow1").css("margin-left", "-35px");
 	    			$(".title").css("opacity", 0);
+	    			$("#night .title").css("opacity", 1);
+	    			$("#night .title").css("color", "#222");
 	    			transitioned = 1;
 				};
 	    	});
@@ -52,6 +54,7 @@
 	    			$("#arrow1").css("background-color", "#222");
 	    			$("#arrow1").css("margin-left", "0px");
 	    			$(".title").css("opacity", 1);
+	    			$("#night .title").css("color", "#e7e7e2");
     				transitioned = 0;
 				};
 			});
@@ -61,6 +64,10 @@
 				$(".popup").css("margin-left", "-100%");
 	    	});
 		});
+		// var x = 0
+		// $(document).ready(function(){
+		// 	setTimeout(function(){ $("#count").attr("content", x); x += 1; }, 1000);
+		// });
 	</script>
 </head>
 <body>
@@ -77,10 +84,13 @@
 		</div>
 	</div>
 	<div id="night" class="panel">
+		<div class="title">Pets Rescued</div>
+		<div class="separator"></div>
+		<div class="title" id="count">94224</div>
+
 		<div class="arrow" id="arrow"></div>
 		<div class="arrow" id="arrow1"></div>
 		<div class="container" id="map_container">
-			<div id="map">
 
 				<script src="http://d3js.org/d3.v3.min.js"></script>
 				<script type="text/javascript" id="jscr">

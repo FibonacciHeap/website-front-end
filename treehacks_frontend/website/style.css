@@ -123,16 +123,31 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 }
+#night .title {
+	text-align: right;
+	font-size: 30px;
+	letter-spacing: 0px;
+	padding-right: 40px;
+}
 .separator {
 	height: 1px;
-	margin: 20px auto;
-	width: 30%;
+	margin: 0px auto;
+	margin-right: 40px;
+	width: 250px;
 }
+
 #day .separator {
 	background-color: #aaa;
 }
 #night .separator {
 	background-color: #555;
+	text-align: right;
+}
+#night #count {
+	margin-right: -15px;
+	font-size: 150px;
+	letter-spacing: 15px;
+	font-size: 50px;
 }
 .menu .item {
 	cursor: pointer;
